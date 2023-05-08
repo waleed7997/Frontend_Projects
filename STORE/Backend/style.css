@@ -1,0 +1,391 @@
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.carousel-caption {
+	bottom: 270px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 75%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.navbar-light .navbar-brand {
+	color: #00AC7C;
+	font-size: 40px;
+	text-transform: uppercase;
+	/* font-weight: bold; */
+	letter-spacing: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #00AC7C;
+	font-size: 30px;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #00AC7C;
+	font-size: 30px;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.navbar-toggler {
+	background: #636262;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: #ffffff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000000;
+}
+
+
+.loader {
+	--height-of-loader: 15px;
+	--loader-color: #00AC7C;
+	width: 100%;
+	height: var(--height-of-loader);
+	background-color: #00000033;
+	position: relative;
+   }
+   
+   .loader::before {
+	content: "";
+	position: absolute;
+	background: var(--loader-color);
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	animation: moving 2s ease-in-out infinite;
+	;
+   }
+   
+   @keyframes moving {
+	50% {
+	 width: 100%;
+	}
+   
+	100% {
+	 width: 0;
+	 right: 0;
+	 left: unset;
+	}
+   }
+
+
+   .scanner span {
+	color: transparent;
+	font-size:50px;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .scanner span::before {
+	content: "WELCOME";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	border-right: 4px solid #17ff8f;
+	overflow: hidden;
+	color: #686868;
+	animation: load91371 2s linear infinite;
+  }
+  
+  @keyframes load91371 {
+	0%, 10%, 100% {
+	  width: 0;
+	}
+  
+	10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+	  border-right-color: transparent;
+	}
+  
+	11%,21%,31%,41%,51%,61%,71%,81%,91% {
+	  border-right-color: #0aec99;
+	}
+  
+	60%, 80% {
+	  width: 100%;
+	}
+  }
+
+
+  .card {
+	width: 23.500em;
+	height: 17.5em;
+	box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: all 120ms;
+	display: inline-block;
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	padding: 0.5em;
+	padding-bottom: 3.4em;
+   }
+   
+   .card::after {
+	content: "Add to Cart";
+	padding-top: 1.25em;
+	padding-left: 1.25em;
+	position: absolute;
+	left: 0;
+	bottom: -60px;
+	background: #00AC7C;
+	color: #fff;
+	height: 3.8em;
+	width: 100%;
+	transition: all 80ms;
+	font-weight: 600;
+	text-transform: uppercase;
+   }
+   
+   .card .title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	position: absolute;
+	left: 0.625em;
+	bottom: 1.875em;
+	font-weight: 400;
+   }
+   
+   .card .price {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 20px;
+	padding: 0;
+	position: absolute;
+	left: 0.625em;
+	bottom: 0.625em;
+   }
+   
+   .card:hover::after {
+	bottom: 0;
+   }
+   
+   .card:active {
+	transform: scale(0.98);
+   }
+   
+   .card:active::after {
+	content: "Added ";
+	height: 4.125em;
+
+   }
+   
+   .text {
+	max-width: 55px;
+   }
+   
+   .image {
+	background-image: url(https://img.youm7.com/ArticleImgs/2018/6/24/24003-%D8%A7%D9%84%D8%AA%D8%B1%D9%86%D8%AC.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   .image1 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   .image2 {
+	background-image: url(https://pa.namshicdn.com/product/A3/372121W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   .image3 {
+	background-image: url(https://pa.namshicdn.com/product/A7/489631W/3-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   .image4 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   .image5 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   .image6 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   .image7 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   .image8 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+
+   .image9 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+
+   .image10 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+
+   .image11 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+
+   .image12 {
+	background-image: url(https://pa.namshicdn.com/product/A2/944311W/1-web-desktop-list.jpg);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+   }
+
+   
+   footer {
+	background-color: #00AC7C;
+	min-height: 25vh;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  footer h3 {
+	color: var(--white);
+	font-size: 2rem;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid var(--gray);
+	width: 100%;
+	text-align: center;
+  }
+  
+  footer p {
+	font-size: 1rem;
+  
+	color: #ffffff;
+	margin-bottom: 1rem;
+  }
+  
+  footer .icon {
+	color: var(--gray);
+	margin: 1rem;
+	font-size: 1.5rem;
+  }
+  
+  footer .icon:hover {
+	color: var(--dark-purple);
+  }
+
+
+  @media screen and (max-width: 1400px) {
+	main {
+	  max-width: 1024px;
+	}
+  }
+  @media screen and (max-width: 1050px) {
+	main {
+	  max-width: 768px;
+	}
+	.features-list img {
+	  display: none;
+	}
+	.details-list {
+	  grid-template-columns: 1fr 1fr;
+	}
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+	main {
+	  max-width: 600px;
+	}
+	.details-list {
+	  grid-template-columns: 1fr;
+	}
+	html {
+	  font-size: 90%;
+	}
+  }
+  
+  @media screen and (max-width: 600px) {
+	main {
+	  margin: 2rem;
+	  text-align: center;
+	}
+}
+  
+
+   
+
+
